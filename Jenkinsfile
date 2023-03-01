@@ -6,7 +6,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'git clone https://github.com/siva8143kumar/basic-jsp-example.git'
-                sh 'mvn clean package'
+              
+                sh '/opt/apache-maven-3.9.0/bin/mvn package'
                 sh 'ls -lrt'
             }
         }
