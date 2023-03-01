@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                #sh 'git clone https://github.com/siva8143kumar/basic-jsp-example.git'
+                // sh 'git clone https://github.com/siva8143kumar/basic-jsp-example.git'
               
                 sh '/opt/apache-maven-3.9.0/bin/mvn clean install'
                 sh 'ls -lrt'
