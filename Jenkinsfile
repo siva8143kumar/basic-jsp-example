@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                mvn clean package
+                sh 'mvn clean package'
+                sh 'ls -lrt'
             }
         }
         
